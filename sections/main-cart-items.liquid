@@ -126,7 +126,6 @@
                       </div>
                     </div>
                     <div class="cart-item__price-wrapper">
-                      <h1>Test</h1>
                       {%- if item.original_line_price != item.final_line_price -%}
                         <dl class="cart-item__discounted-prices">
                           <dt class="visually-hidden">
@@ -146,8 +145,6 @@
                         </dl>
                       {%- else -%}
                         <span class="price price--end" data-tbyb="tbyb-price-line">
-                          
-                          <h1>Test</h1>
                           {{ item.original_line_price | money }}
                         </span>
                       {%- endif -%}
@@ -221,12 +218,12 @@
                           <dt class="visually-hidden">
                             {{ 'products.product.price.sale_price' | t }}
                           </dt>
-                          <dd class="price price--end">
+                          <dd class="price price--end" data-tbyb="tbyb-price-line">
                             {{ item.final_line_price | money }}
                           </dd>
                         </dl>
                       {%- else -%}
-                        <span class="price price--end">
+                        <span class="price price--end" data-tbyb="tbyb-price-line">
                           {{ item.original_line_price | money }}
                         </span>
                       {%- endif -%}
