@@ -183,7 +183,7 @@
                         id="Quantity-{{ item.index | plus: 1 }}"
                         data-index="{{ item.index | plus: 1 }}"
                       >
-                      <button class="quantity__button no-js-hidden" name="plus" type="button">
+                      <button class="quantity__button no-js-hidden" name="plus" type="button" data-tbyb="quantity-control" >
                         <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: item.product.title | escape }}</span>
                         {% render 'icon-plus' %}
                       </button>
